@@ -1,6 +1,7 @@
 FROM almalinux:9
 LABEL Maintainer="kishore8856"
-RUN dnf install nginx -y
+RUN dnf install nginx -y \
+    && useradd kishore
 
 USER kishore
 
